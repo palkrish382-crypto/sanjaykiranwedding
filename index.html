@@ -232,7 +232,7 @@
 </head>
 <body>
 
-    <!-- Background Audio Loop -->
+    <!-- Background Audio -->
     <audio id="weddingSong" loop>
         <source src="https://assets.mixkit.co/music/preview/mixkit-serene-view-443.mp3" type="audio/mp3">
     </audio>
@@ -330,7 +330,6 @@
             }
         }
 
-        // Automatic trigger on first screen tap anywhere
         document.body.addEventListener('click', function() {
             if (!isPlaying) {
                 song.play().then(() => {
